@@ -15,5 +15,5 @@ jobs:
         working-directory: 'web'
       - run: |
           yarn install
-          yarn run build:prod
+          yarn run build
         working-directory: 'server'
