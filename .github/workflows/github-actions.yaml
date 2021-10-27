@@ -12,8 +12,8 @@ jobs:
       - run: |
           yarn install
           yarn run build --prod --output ../server/public
-        working-directory: './server'
+        working-directory: './web'
       - run: |
           yarn install
           yarn run build:prod
-        working-directory: './web'
+        working-directory: './server'
