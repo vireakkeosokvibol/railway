@@ -16,4 +16,4 @@ jobs:
       - run: |
           yarn install
           yarn run build:prod
-        working-directory: '../server'
+        working-directory: 'server'
