@@ -9,9 +9,9 @@ jobs:
         with:
           node-version: '16'
       - run: npm install --global yarn
-      - run: cd web
+      working-directory: './web'
       - run: yarn install
       - run: yarn run build --prod --output ../server/public
-      - run: cd ../server
+      working-directory: './server'
       - run: yarn install
       - run: yarn run build:prod
